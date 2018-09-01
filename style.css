@@ -1,0 +1,59 @@
+* { margin: 0; padding: 0; }
+
+body {
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
+footer {
+	text-align: center;
+	padding: 100px;
+	background: cyan;
+	height: 100px;
+}
+
+.heading {
+	text-align: center;
+	margin-bottom: 1000px;
+}
+
+.box{
+	width: 300px;
+	height: 200px;
+	box-shadow: 1px 5px 22px 11px rgba(0,0,0,0.2);
+	margin: 60px auto 0px;
+	opacity: 0;
+}
+
+.animation-to-top.load-animation {
+	animation: animToTop 1s ease forwards;
+}
+
+.animation-to-bottom.load-animation {
+	animation: animToBottom 1s ease forwards;
+}
+
+.animation-to-left.load-animation {
+	animation: animToLeft 1s ease forwards;
+}
+
+.animation-to-right.load-animation {
+	animation: animToRight 1s ease forwards;
+}
+
+@keyframes animToTop {
+	0% {transform: translateY(100px); opacity: 0;}
+	100% {transform: translateY(0); opacity: 1;}
+}
+@keyframes animToBottom {
+	0% {transform: translateY(-100px); opacity: 0;}
+	100% {transform: translateY(0); opacity: 1;}
+}
+@keyframes animToRight {
+	0% {transform: translateX(-100px); opacity: 0;}
+	100% {transform: translateX(0); opacity: 1;}
+}
+@keyframes animToLeft {
+	0% {transform: translateX(100px); opacity: 0;}
+	100% {transform: translateX(0); opacity: 1;}
+}
